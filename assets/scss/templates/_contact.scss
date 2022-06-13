@@ -1,0 +1,114 @@
+.contact {
+    & .row {
+        & .h5 {
+            @include adaptive-value("font-size", 15, 12, 0);
+            white-space: nowrap;
+        }
+
+        & .name-link {
+            & a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: $primary-color;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+
+        & .btn {
+            margin-top: 30px;
+            background: $primary-color;
+            color: $white;
+            @include adaptive-value("font-size", 17, 12, 0);
+            padding: 15px 50px;
+            white-space: nowrap;
+            border-radius: 0 !important;
+
+            &:hover {
+                background: $secondary-color;
+                transition: 0.5s ease;
+                color: $white;
+            }
+        }
+
+        & .sent {
+            background: $bg-color;
+            color: #000;
+            @include adaptive-value("font-size", 17, 12, 0);
+            padding: 30px 60px;
+            white-space: nowrap;
+            margin: 30px 0;
+        }
+
+        // & .sent {
+        //     overflow: hidden;
+        //     opacity: 0;
+        //     height: 0;
+        //     transition: height 0.5s ease, opacity 0.5s ease, padding 0.5s ease; 
+        //     margin-top: 30px;
+        //     margin-bottom: 30px !important;
+        //     background: $bg-color;
+        //     color: #000;
+        //     @include adaptive-value("font-size", 17, 12, 0);
+        //     padding: 0px 76px;
+        //     white-space: nowrap;
+        //     width: 437px;
+        //     &.active {
+        //         opacity: 1;
+        //         height: 84px;
+        //         padding: 30px 76px;
+        //     }
+        // }
+    }
+
+    .form-control {
+        height: 60px;
+        border: 0px;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+
+    input {
+        padding: 0;
+
+        &::placeholder {
+            opacity: 1;
+        }
+
+        &:focus {
+            &::placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .form-control-text {
+        height: 100px;
+        border: 0;
+        border-bottom: 1px solid #000;
+        box-shadow: none !important;
+    }
+
+    textarea {
+        &::placeholder {
+            opacity: 1;
+        }
+
+        &:focus {
+            &::placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    #map {
+        height: 500px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+        margin-bottom: 50px;
+    }
+}

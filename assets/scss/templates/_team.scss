@@ -1,0 +1,50 @@
+.team {
+    & .h2 {
+        margin-top: 30px;
+        margin-bottom: 30px !important;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: '';
+        display: none;
+    }
+
+    
+
+    & .bi {
+        color: $primary-color;
+        font-size: 35px;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+            color: $secondary-color;
+            border-bottom: 1px solid $secondary-color !important;
+            transition: 0.5s ease;
+        }
+    }
+    
+
+    & .swiper-pagination-bullets {
+        bottom: 80px !important;
+        & span {
+            border-radius: 0;
+            width: 30px;
+            height: 4px;
+            
+        }
+    }
+
+    & .swiper-pagination-bullet {
+        background: rgb(255, 255, 255);
+  
+    }
+
+    & .swiper-pagination-bullet-active {
+        background: $primary-color !important;
+    }
+}

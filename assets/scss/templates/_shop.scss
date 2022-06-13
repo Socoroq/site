@@ -1,0 +1,60 @@
+.shop {
+
+    // product display
+    & .row {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        & .category-item {
+            display: none;
+        }
+
+        & .category-item.active {
+            display: block;
+        }
+
+        & .amount-2 {
+            margin-top: 30px;
+        }
+        & .card-img-top {
+            border-radius: 0 !important;
+        }
+    }
+
+    // tab view
+    & .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .button-category {
+        display: flex;
+        justify-content: center;
+
+        & .btn {
+            border: 1px solid #000;
+            font-size: 17px;
+            width: 120px;
+            height: 50px;
+            margin: 0 10px;
+            border-radius: 0 !important;
+            &.active {
+                background: #000;
+                color: white;
+            }
+        }
+    }
+
+    // displaying the number of goods
+    & .amount {
+        color: #909090;
+    }
+
+    // price color
+    .card {
+        & .price {
+            color: #909090 !important;
+        }
+    }
+
+}

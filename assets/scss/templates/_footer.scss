@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bg-color;
+    padding: 50px 0 !important;
+
+    & a {
+        text-decoration: none;
+        color: $dark;
+
+        &:hover {
+            color: $primary-color;
+            transition: 0.5s ease;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        & a {
+            padding: 0 20px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,153 @@
+.items {
+    & .row {
+        margin-top: 30px;
+        margin-bottom: 50px !important;
+
+        & :nth-child(1) {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        & :nth-child(2) {
+            & p {
+                & .price {
+                    color: $price;
+                    font-size: 40px;
+                }
+
+                & .price-2 {
+                    color: $price-2;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        & :nth-child(4),
+        :nth-child(5) {
+            & .price-item {
+                color: $price;
+            }
+
+            & .price-item-2 {
+                color: $price-2;
+            }
+
+        }
+
+        .size-item {
+            display: flex;
+            margin-top: 15px;
+
+            & label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                margin: 0 5px;
+                color: rgb(0, 0, 0);
+                border: 1px solid #000;
+            }
+
+            & input[type="checkbox"],
+            & input[type="radio"] {
+                display: none;
+                background: #000;
+                color: red;
+
+                &:checked+label {
+                    background: #000;
+                    color: white;
+                }
+            }
+
+
+        }
+
+        & .color {
+            display: flex;
+
+            & label.active {
+                border: 2px solid $primary-color;
+                transition: 0.5s ease;
+            }
+
+            & input[type="radio"] {
+                display: none;
+            }
+
+            & .brown {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                background: brown;
+            }
+
+            & .grey {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                background: gray;
+            }
+
+            & .purple {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                background: purple;
+            }
+
+            & .yellow {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                background: yellow;
+            }
+        }
+
+        & .button {
+            display: flex;
+            margin-top: 10px;
+
+            & .amount {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                padding: 15px 25px;
+                border: 0.1px solid rgba(0, 0, 0, 0.507);
+                margin-right: 10px;
+
+
+            }
+
+            & .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space: nowrap;
+                font-size: 16px;
+                padding: 15px 25px;
+                border-radius: 0;
+                background: $primary-color;
+                color: white;
+
+                &:hover {
+                    background: $secondary-color;
+                }
+            }
+        }
+
+        & .image-item {
+            display: none;
+        }
+
+        & .image-item.active {
+            display: block;
+        }
+    }
+}

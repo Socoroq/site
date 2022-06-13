@@ -1,0 +1,46 @@
+// title
+.title {
+  padding: 50px 0;
+
+  h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $light;
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  p {
+    color: #666;
+  }
+
+  &.title-white {
+    h2 {
+      color: $light;
+    }
+  }
+}
+
+// Border title
+.border {
+  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  height: 1px;
+  margin: 15px auto 0;
+  position: relative;
+  width: 30%;
+
+  &:before {
+    background-color: $light;
+    content: '';
+    height: 6px;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    top: -4px;
+    width: 50px;
+    background-color: $primary-color;
+
+  }
+}

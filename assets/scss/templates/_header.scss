@@ -1,0 +1,92 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+    transition: background-color 1s ease;
+    &.active {
+        background-color: #ffffff;
+    }
+
+    & .navbar {
+        & .logo-brand {
+            color: $dark;
+
+            & a {
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+        }
+
+        & .navbar-nav {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            width: 100%;
+
+            & .nav-links {
+                
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                
+                width: 100%;
+                padding: 0 30px;
+                color: $dark;
+                &:hover {
+                    color: $primary-color;
+                    transition: 0.5s ease;
+                }
+            }
+
+            & .active {
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 140%;
+                letter-spacing: 0.02em;
+                color: $primary-color;
+            }
+        }
+
+        & .to-come-in {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                text-decoration: none;
+                color: $dark;
+                white-space: nowrap;
+                margin-right: 60px;
+
+                &:hover {
+                    transition: 0.5s ease;
+                    color: $primary-color;
+                }
+
+                & .bi {
+                    color: $primary-color;
+                }
+            }
+
+            & .btn {
+                font-size: 25px;
+
+                &:hover {
+                    color: $secondary-color;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+
+    }
+}
